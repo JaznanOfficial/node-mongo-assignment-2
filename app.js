@@ -8,6 +8,11 @@ const cors = require('cors');
 app.use(cors())
 app.use(express.json())
 
+// main server code------------>
+
+const tourPlacesRoute = require('./v1/routes/tourPlaces.route')
+
+app.use('/api/v1/tours', tourPlacesRoute)
 
 
 

@@ -29,5 +29,5 @@ mongoose.connect(process.env.DATABASE_ATLAS)
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
-    console.log("Database connected on port", PORT.green.bold);
+    console.log("Server is running on port", PORT.green.bold);
 });
