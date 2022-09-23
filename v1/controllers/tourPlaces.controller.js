@@ -3,8 +3,8 @@ const { getTourPlacesService, postTourPlacesService } = require("../services/tou
 const getTourPlaces = async (req, res, next) => {
     try {
         const filter = req.query;
-        console.log("data got");
-        const tourPlaces = await getTourPlacesService({});
+        
+        const tourPlaces = await getTourPlacesService(filter);
         // console.log(tourPlaces)
         res.status(200).json({
             status: "Success",

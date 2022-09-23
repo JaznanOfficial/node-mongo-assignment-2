@@ -2,7 +2,7 @@ const places = require('../models/TourPlaces.models');
 
 
 const getTourPlacesService = async(filter) => {
-    const placesData = await places.find({});
+    const placesData = await places.find(filter);
     console.log(placesData);
     return placesData;
 }
